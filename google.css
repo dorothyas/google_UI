@@ -1,4 +1,4 @@
-ul {
+.header ul {
     list-style: none;
     margin-top: 0px;
 }
@@ -19,18 +19,15 @@ li a {
     text-decoration: none;
 
 }
-p a {
-    text-decoration: none;
-    padding: 10px 10px 10px 10px;
-}
+
 .body{
     text-align: center;
     margin : 150px;
+    font-family: Arial, sans-serif;
 }
 .google {
     font-size: 100px;
-   
-    
+      
 }
 #blue {
     color: blue;
@@ -47,20 +44,38 @@ p a {
 input{
     width: 500px;
     height: 40px;
+    font-size: 1.0em;
 
 }
 button{
-    width: 250px;
+    width: 150px;
     height: 30px;
-    margin-left: 0.5em;
     
 }
-.footer{
-    background-color: silver;
+p a {
+    text-decoration: none;
+    padding: 10p
+    x 10px 10px 10px;
 }
 
-#footerz li {
-    display: inline;
+.footer{
+    background-color: silver;    
+}
+.footer p{
+    padding: 10px;  
+}
+#lowerfooter {
+    padding: 0px 10px 40px 10px;   
+}
+
+#rightfooter li {
+    list-style: none;
     float: right;
-    padding: 10px 10px 40px 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+#leftfooter li {
+    list-style: none;
+    float: left;
+    margin: 0px 10px 10px 10px;
 }
