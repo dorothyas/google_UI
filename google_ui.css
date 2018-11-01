@@ -1,0 +1,66 @@
+ul {
+    list-style: none;
+    margin-top: 0px;
+}
+.header {
+    margin-top : 10px;   
+    position: fixed;
+    width: 100%; 
+    left: 0px;
+    top: 0px;
+}
+
+.header li{
+    float: right;
+    padding: 10px 10px 10px 10px;
+ }
+
+li a {
+    text-decoration: none;
+
+}
+p a {
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+.body{
+    text-align: center;
+    margin : 150px;
+}
+.google {
+    font-size: 100px;
+   
+    
+}
+#blue {
+    color: blue;
+}
+#red {
+    color: red;
+}
+#yellow {
+    color: yellow;
+}
+#green {
+    color: green;
+}
+input{
+    width: 500px;
+    height: 40px;
+
+}
+button{
+    width: 250px;
+    height: 30px;
+    margin-left: 0.5em;
+    
+}
+.footer{
+    background-color: silver;
+}
+
+#footerz li {
+    display: inline;
+    float: right;
+    padding: 10px 10px 40px 10px;
+}
