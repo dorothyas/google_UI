@@ -53,6 +53,8 @@ input{
 button{
     width: 150px;
     height: 30px;
+    border-style: none;
+    color:grey;
     
 }
 p a {
@@ -81,5 +83,4 @@ p a {
     list-style: none;
     float: left;
     margin: 0px 10px 10px 10px;
-    fle
 }
