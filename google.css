@@ -10,10 +10,13 @@
     top: 0px;
 }
 
-.header li{
+.header li {
     float: right;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 25px 10px 10px;
  }
+li a img{
+    margin-bottom: 10px;
+} 
 
 li a {
     text-decoration: none;
@@ -78,4 +81,5 @@ p a {
     list-style: none;
     float: left;
     margin: 0px 10px 10px 10px;
+    fle
 }
