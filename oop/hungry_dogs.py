@@ -26,12 +26,12 @@ for dog in my_pets.dogs:
 print("{} is {}.".format(dog.name, dog.age))
 print("And they're all {}s, of course.".format(dog.species))
 
-are_my_dogs_hungry = False
+my_hungry_dogs = False
 for dog in my_pets.dogs:
     if dog.is_hungry:
-        are_my_dogs_hungry = True
+        my_hungry_dogs = True
 
-if are_my_dogs_hungry:
+if my_hungry_dogs:
     print("My dogs are hungry.")
 else:
     print("My dogs are not hungry.")
