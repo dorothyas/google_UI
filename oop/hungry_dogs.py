@@ -9,7 +9,7 @@ class Dog:
         self.age = age
         self.is_hungry = True
 
-    def eat(self):
+    def eats(self):
         self.is_hungry = False
 
 my_dogs = [
@@ -21,7 +21,7 @@ my_pets = Pets(my_dogs)
 print("I have {} dogs.".format(len(my_pets.dogs)))
 
 for dog in my_pets.dogs:
-    dog.eat()
+    dog.eats()
 
 print("{} is {}.".format(dog.name, dog.age))
 print("And they're all {}s, of course.".format(dog.species))
