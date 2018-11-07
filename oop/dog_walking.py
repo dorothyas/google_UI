@@ -1,29 +1,23 @@
-
-class Pet:
-    dog=[]
-    def __init__(self, dog):
-        self.dog=dog
-
+class Pets:
+    def __init__(self, dogs):
+        self.dogs = dogs
     def walk(self):
-        for dog in self.dog:
+        for dog in self.dogs:
             print(dog.walk())
-
 class Dog:
-    species ='mammal'
-    is_hungry=True
-
-    def __init__(self,name,age):
-        self.name=name
-        self.age =age
+    species = 'mammals'
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.is_hungry= True
+    def eat(self):
+        self.is_hungry= False
     def walk(self):
-        return "{} is walking!".format(self.name)
-          
-my_dogs = [
-    Dog("Tom", 6), 
-    Dog("Fletcher", 7), 
-    Dog("Larry", 9)
-]
+        return "%s is walking!" % (self.name)
 
-my_pets = Pet(my_dogs)
-
-my_pets.walk()
+Tom =  Dog("Tom", 6)
+Fletcher=  Dog("Fletcher", 7)    
+Larry = Dog("Larry", 9)
+all_dogs = [Tom, Fletcher,Larry]
+all_pets = Pets(all_dogs)
+all_pets.walk()

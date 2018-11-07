@@ -1,21 +1,19 @@
 class Pets:
-    dogs = []
     def __init__(self, dogs):
         self.dogs = dogs
 class Dog:
-    species = 'mammal'
+    species = 'mammals'
     def __init__(self, name, age):
         self.name = name
         self.age = age
-my_dogs = [
-    Dog("Tom", 6), 
-    Dog("Fletcher", 7), 
-    Dog("Larry", 9)
-]
-my_pets = Pets(my_dogs)
+Tom =  Dog("Tom", 6)
+Fletcher=  Dog("Fletcher", 7)    
+Larry = Dog("Larry", 9)
+all_dogs = [Tom, Fletcher,Larry]
+all_pets = Pets(all_dogs)
 
-print("I have {} dogs.".format(len(my_pets.dogs)))
-for dog in my_pets.dogs:
-    print("{} is {}.".format(dog.name, dog.age))
+print ("I have %d dogs." % (len(all_pets.dogs)))
 
-print("And they're all {}s, of course.".format(dog.species))
+for dog in all_pets.dogs:
+    print("%s is %s" % (dog.name, dog.age))
+print("And they're all %s of course." %dog.species)

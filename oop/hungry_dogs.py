@@ -1,37 +1,32 @@
 class Pets:
-    dogs = []
     def __init__(self, dogs):
         self.dogs = dogs
 class Dog:
-    species = 'mammal'
+    species = 'mammals'
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.is_hungry = True
+        self.is_hungry= True
+    def eat(self):
+        self.is_hungry= False
 
-    def eats(self):
-        self.is_hungry = False
+Tom =  Dog("Tom", 6)
+Fletcher=  Dog("Fletcher", 7)    
+Larry = Dog("Larry", 9)
+all_dogs = [Tom, Fletcher,Larry]
+all_pets = Pets(all_dogs)
 
-my_dogs = [
-    Dog("Tom", 6), 
-    Dog("Fletcher", 7), 
-    Dog("Larry", 9)
-]
-my_pets = Pets(my_dogs)
-print("I have {} dogs.".format(len(my_pets.dogs)))
+print ("I have %d dogs." % (len(all_pets.dogs)))
 
-for dog in my_pets.dogs:
-    dog.eats()
-
-print("{} is {}.".format(dog.name, dog.age))
-print("And they're all {}s, of course.".format(dog.species))
-
-my_hungry_dogs = False
-for dog in my_pets.dogs:
+for dog in all_pets.dogs:
+    print("%s is %s" % (dog.name, dog.age))
+print("And they're all %s of course." %dog.species)
+hungry_dogs = False
+for dog in all_pets.dogs:
     if dog.is_hungry:
-        my_hungry_dogs = True
+        hungry_dogs = True
 
-if my_hungry_dogs:
+if hungry_dogs:
     print("My dogs are hungry.")
 else:
     print("My dogs are not hungry.")
